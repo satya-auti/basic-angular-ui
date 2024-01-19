@@ -11,3 +11,4 @@ ng g c layout
 ng g m layout
 ng g c authentication/signin
 ng g c authentication/signup
+ng add @angular/material
