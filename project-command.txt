@@ -1,0 +1,13 @@
+ng new basic-angular-ui
+cd basic-angular-ui 
+git remote add origin git@github.com:satya-auti/basic-angular-ui.git
+git branch -M main
+git push -u origin main
+code .
+
+ng g c authentication
+ng g m authentication
+ng g c layout
+ng g m layout
+ng g c authentication/signin
+ng g c authentication/signup
