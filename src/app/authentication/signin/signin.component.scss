@@ -57,13 +57,15 @@
     min-width: 300px;
     margin-right: 10px;
     margin-left: 10px;
+//     background-color: transparent; /* Set background to transparent */
+//   border: none; /* Remove border */
+//   box-shadow: none; /* Remove box shadow */
   }
 
   mat-card-title,
   mat-card-content {
     display: flex;
     justify-content: center;
-    // padding: 20px;
     padding-top: 20px;
   }
 
@@ -76,6 +78,7 @@
 
   mat-card {
     min-width: 400px;
+    // background-color: #ffffff; 
   }
 
   .mtop {
