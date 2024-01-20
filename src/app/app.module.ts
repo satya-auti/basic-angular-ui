@@ -9,6 +9,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// import { MatButtonModule } from "@angular/material/button"
+// import { MatIconModule }   from "@angular/material/icon"
+// import { MatInputModule }  from "@angular/material/input"
+
+// import {
+//   MatCardModule,
+//   MatInputModule,
+//   MatButtonModule
+// } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -22,7 +31,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSliderModule
+    MatSliderModule,
+    // MatButtonModule,
+    // MatInputModule,
+    // MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
