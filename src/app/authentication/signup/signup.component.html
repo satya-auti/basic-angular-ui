@@ -7,14 +7,68 @@
     <mat-card-content>
       <form [formGroup]="signUpForm" (ngSubmit)="submit()">
 
+        <!-- first name section -->
+        <p>
+            <!-- <mat-icon mat-list-icon>mail_outline</mat-icon> -->
+            <mat-form-field>
+              <input
+                type="text"
+                matInput
+                placeholder="First Name"
+                formControlName="firstName"
+                required
+              />
+              <mat-icon matSuffix >first name</mat-icon>
+              <mat-error>
+                Please provide a valid first name.
+              </mat-error>
+            </mat-form-field>
+          </p>
+
+          <!-- last name section -->
+          <p>
+            <!-- <mat-icon mat-list-icon>mail_outline</mat-icon> -->
+            <mat-form-field>
+              <input
+                type="text"
+                matInput
+                placeholder="Last Name"
+                formControlName="lastName"
+                required
+              />
+              <mat-icon matSuffix >name</mat-icon>
+              <mat-error>
+                Please provide a valid last name.
+              </mat-error>
+            </mat-form-field>
+          </p>
+
+          <!-- <p>
+        
+            <mat-form-field>
+              <input
+                type="text"
+                matInput
+                placeholder="Username"
+                formControlName="username"
+                required
+              />
+              <mat-icon matSuffix >email</mat-icon>
+              <mat-error>
+                Please provide a valid 
+              </mat-error>
+            </mat-form-field>
+          </p> -->
+
+          <!-- email section -->
         <p>
           <!-- <mat-icon mat-list-icon>mail_outline</mat-icon> -->
           <mat-form-field>
             <input
               type="text"
               matInput
-              placeholder="Username"
-              formControlName="username"
+              placeholder="Email"
+              formControlName="email"
               required
             />
             <mat-icon matSuffix >email</mat-icon>
@@ -24,6 +78,8 @@
           </mat-form-field>
         </p>
 
+
+        <!-- password section -->
         <p>
             <!-- <mat-icon mat-list-icon>password</mat-icon> -->
             <mat-form-field>
@@ -45,6 +101,32 @@
             </mat-form-field>
           </p>
 
+          <p>
+            <!-- <mat-icon mat-list-icon>password</mat-icon> -->
+            <mat-form-field>
+              <input
+              [type]="showConfirmPassword ? 'text' : 'password'"
+                matInput
+                placeholder="Confirm Password"
+                formControlName="cPassword"
+                required
+              />
+
+              <!-- <mat-icon matSuffix (click)="togglePasswordVisibility()">visibility</mat-icon> -->
+              <mat-icon matSuffix (click)="toggleConfirmPasswordVisibility()">
+                {{showConfirmPassword?'visibility_off':'visibility'}}
+            </mat-icon>
+              <mat-error>
+                <!-- Password is not matched. -->
+
+                <!-- <p *ngIf="passwordMatch"> -->
+                    <!-- Please provide a valid last name. -->
+                    Password is not matched.
+                <!-- </p> -->
+              </mat-error>
+            </mat-form-field>
+          </p>
+
           <!-- <mat-form-field appearance="fill">
             <mat-label>Password</mat-label>
             <input matInput type="password" name="password">
@@ -60,6 +142,7 @@
             <button mat-button color="secondary">Basic</button>
           </div> -->
 
+          <!-- Button sections -->
           <!-- <section> -->
             <!-- <div class="example-label">Basic</div> -->
             <div class="example-button-row">
@@ -69,7 +152,7 @@
               <!-- <button mat-button color="warn">Warn</button> -->
               <!-- <button mat-button disabled>Disabled</button> -->
               <button mat-button>Cancel</button>
-              <!-- <a mat-button href="https://www.google.com/" target="_blank">Link</a> -->
+            
             </div>
 
           <!-- </section> -->
