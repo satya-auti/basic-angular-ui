@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { GridComponent } from './grid/grid.component';
 import { CardsComponent } from './cards/cards.component';
 import { HeaderComponent } from './header/header.component';
+import { AngularMaterialModule } from '../angular-material.module';
 
 
 
@@ -21,6 +22,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     CommonModule,
     LayoutRoutingModule,
+    AngularMaterialModule
   ]
 })
 export class LayoutModule { }

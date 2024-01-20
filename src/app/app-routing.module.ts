@@ -12,7 +12,7 @@ const routes: Routes = [
           import('./authentication/authentication.module').then((e) => e.AuthenticationModule),
       },
       {
-        path: 'auth',
+        path: 'layout',
         loadChildren: () =>
           import('./layout/layout.module').then((e) => e.LayoutModule),
       },
