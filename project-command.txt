@@ -12,3 +12,11 @@ ng g m layout
 ng g c authentication/signin
 ng g c authentication/signup
 ng add @angular/material
+npm install --save hammerjs
+package-lock.json change version 4.5.1 to 4.5.2
+ng g c layout/sidebar //not worked.
+ng g c layout/sidebar --module layout
+ng g c layout/footer --module layout
+ng g c layout/grid --module layout
+ng g c layout/cards --module layout
+ng g c layout/header --module layout
