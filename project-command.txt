@@ -20,3 +20,4 @@ ng g c layout/footer --module layout
 ng g c layout/grid --module layout
 ng g c layout/cards --module layout
 ng g c layout/header --module layout
+ng g c authentication/forgot-password
