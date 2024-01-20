@@ -1,0 +1,39 @@
+
+
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+  }
+
+  .mat-form-field {
+    min-width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+//     background-color: transparent; /* Set background to transparent */
+//   border: none; /* Remove border */
+//   box-shadow: none; /* Remove box shadow */
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  mat-icon {
+    float: left;
+    opacity: 0.5;
+    margin-top: 14px;
+    padding: 2%;
+  }
+
+  mat-card {
+    min-width: 400px;
+    // background-color: #ffffff; 
+  }
+
+  .mtop {
+    margin-top: 25px;
+  }
