@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    children: [
+  // {
+    // path: '',
+    { path: '', pathMatch: 'full', redirectTo: 'authentication/login' },
+    // children: [
       {
         path: 'authentication',
         loadChildren: () =>
@@ -24,8 +25,8 @@ const routes: Routes = [
       //   // path: 'error',
       //   // loadChildren: () => import('./error/error.module').then(e => e.ErrorModule)
       // },
-    ],
-  },
+    // ],
+  // },
 ];
 
 @NgModule({
