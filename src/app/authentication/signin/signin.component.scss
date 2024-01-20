@@ -54,7 +54,7 @@
   }
 
   .mat-form-field {
-    min-width: 400px;
+    min-width: 300px;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -71,9 +71,13 @@
     float: left;
     opacity: 0.5;
     margin-top: 14px;
-    // padding: 2%;
+    padding: 2%;
   }
 
   mat-card {
     min-width: 400px;
+  }
+
+  .mtop {
+    margin-top: 25px;
   }

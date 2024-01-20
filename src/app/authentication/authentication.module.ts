@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
+// import {MatFormFieldModule} from '@angular/material/form-field';
 import { AuthenticationRoutingModule } from './authentication-routing.module';
 // import {
 //   MatCardModule,
@@ -14,6 +14,7 @@ import { MatButtonModule } from "@angular/material/button"
 import { MatIconModule }   from "@angular/material/icon"
 import { MatInputModule }  from "@angular/material/input"
 import { MatCardModule } from "@angular/material/card";
+import { MatFormFieldModule } from "@angular/material/form-field";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -30,13 +31,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatCardModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule
   ],
   exports: [
     MatButtonModule,
     MatIconModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule
   ],
 })
 export class AuthenticationModule { }

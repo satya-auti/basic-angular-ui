@@ -9,6 +9,7 @@ import { EmailValidator, FormControl, FormGroup, Validators } from '@angular/for
 })
 export class SigninComponent {
 
+  public showPassword: boolean = false;
   emailRegex: string = "";
   error: string = ""
   form: FormGroup = new FormGroup({
@@ -35,6 +36,11 @@ export class SigninComponent {
       
     }
   }
+
+  public togglePasswordVisibility(): void {
+    this.showPassword = !this.showPassword;
+  }
+  
 }
 
 // export class FormFieldOverviewExample {}

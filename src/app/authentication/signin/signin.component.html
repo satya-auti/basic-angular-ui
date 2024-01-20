@@ -1,52 +1,8 @@
 <!-- <p>signin works!</p> -->
 
-<!-- <div class="example-container">
-    <mat-form-field>
-      <input matInput placeholder="Input">
-    </mat-form-field>
-  
-    <mat-form-field>
-      <textarea matInput placeholder="Textarea"></textarea>
-    </mat-form-field>
-  
-    <mat-form-field> -->
-      <!-- <mat-select placeholder="Select">
-        <mat-option value="option">Option</mat-option>
-      </mat-select> -->
-    <!-- </mat-form-field>
-  </div> -->
-
-  <!-- <mat-card>
-    <mat-card-title>Login</mat-card-title>
-<mat-card-content>
-<form [formGroup]="form" (ngSubmit)="submit()">
-  <p>
-    <mat-form-field>
-      <input type="text" matInput placeholder="Username" formControlName="username">
-    </mat-form-field>
-  </p>
-
-  <p>
-    <mat-form-field>
-      <input type="password" matInput placeholder="Password" formControlName="password">
-    </mat-form-field>
-  </p>
-
-  <p *ngIf="error" class="error">
-    {{ error }}
-  </p>
-
-  <div class="button">
-    <button type="submit" mat-button>Login</button>
-  </div>
-
-</form>
-</mat-card-content>
-</mat-card> -->
-
 
 <mat-card>
-    <mat-card-title>Login</mat-card-title>
+    <mat-card-title>Sign In</mat-card-title>
     <mat-card-content>
       <form [formGroup]="form" (ngSubmit)="submit()">
 
@@ -60,6 +16,7 @@
               formControlName="username"
               required
             />
+            <mat-icon matSuffix >email</mat-icon>
             <mat-error>
               Please provide a valid email address
             </mat-error>
@@ -70,19 +27,35 @@
             <!-- <mat-icon mat-list-icon>password</mat-icon> -->
             <mat-form-field>
               <input
-                type="text"
+              [type]="showPassword ? 'text' : 'password'"
                 matInput
                 placeholder="Password"
                 formControlName="password"
                 required
               />
+
+              <!-- <mat-icon matSuffix (click)="togglePasswordVisibility()">visibility</mat-icon> -->
+              <mat-icon matSuffix (click)="togglePasswordVisibility()">
+                {{showPassword?'visibility_off':'visibility'}}
+            </mat-icon>
               <mat-error>
                 Please provide a valid password 
               </mat-error>
             </mat-form-field>
           </p>
 
-          <div>
+          <!-- <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" name="password">
+            <input matInput [type]="showPassword ? 'text' : 'password'" name="password">
+            <mat-icon matSuffix>visibility</mat-icon>
+            <mat-icon matSuffix (click)="togglePasswordVisibility()">visibility</mat-icon>
+            <mat-icon matSuffix (click)="togglePasswordVisibility()">
+                {{showPassword?'visibility_off':'visibility'}}
+            </mat-icon>
+        </mat-form-field> -->
+
+          <div class="mtop">
             <button mat-button>Basic</button>
           </div>
   
