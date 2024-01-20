@@ -78,6 +78,22 @@
           </mat-form-field>
         </p>
 
+        <mat-form-field>
+            <input matInput
+            placeholder="DOB - MM/DD/YYYY"
+            formControlName="dob"
+             [matDatepicker]="myDatepicker">
+            <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+            <mat-datepicker #myDatepicker></mat-datepicker>
+          </mat-form-field>
+          
+
+        <!-- <input [matDatepicker]="myDatepicker"> -->
+        <!-- <mat-datepicker #myDatepicker></mat-datepicker> -->
+
+        <!-- <input [matDatepicker]="myDatepicker">
+        <mat-datepicker-toggle [for]="myDatepicker"></mat-datepicker-toggle>
+        <mat-datepicker #myDatepicker></mat-datepicker> -->
 
         <!-- password section -->
         <p>

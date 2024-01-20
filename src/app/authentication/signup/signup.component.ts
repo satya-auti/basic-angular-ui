@@ -25,15 +25,16 @@ export class SignupComponent {
       lastName: new FormControl('', [Validators.required, Validators.pattern(this.emailRegex)]),
 
       email: new FormControl('', [ Validators.email, Validators.required, Validators.pattern(this.emailRegex)]),
+      dob: new FormControl('', [Validators.required ]),
       password: new FormControl('', [Validators.minLength(8), Validators.required, ]),
       cPassword: new FormControl('', [Validators.minLength(8), Validators.required, this.passwordsMatchValidator()]),
     });
 
-    if (this.signUpForm.value.password === this.signUpForm.value.cPassword) {
-      this.passwordMatch = false;
-    }else {
-      this.passwordMatch = true;
-    }
+    // if (this.signUpForm.value.password === this.signUpForm.value.cPassword) {
+    //   this.passwordMatch = false;
+    // }else {
+    //   this.passwordMatch = true;
+    // }
 
   }
 
