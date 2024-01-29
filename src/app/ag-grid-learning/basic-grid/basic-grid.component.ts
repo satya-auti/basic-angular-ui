@@ -1,0 +1,10 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-basic-grid',
+  templateUrl: './basic-grid.component.html',
+  styleUrls: ['./basic-grid.component.scss']
+})
+export class BasicGridComponent {
+
+}

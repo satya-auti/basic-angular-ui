@@ -16,6 +16,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./layout/layout.module').then((e) => e.LayoutModule),
       },
+      {
+        path: 'ag-grid',
+        loadChildren: () =>
+          import('./ag-grid-learning/ag-grid-learning.module').then((e) => e.AgGridLearningModule),
+      },
       // {
       //   path: 'customer',
       //   loadChildren: () =>
