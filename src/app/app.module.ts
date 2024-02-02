@@ -8,6 +8,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AgGridLearningModule } from './ag-grid-learning/ag-grid-learning.module';
 
 // import { MatButtonModule } from "@angular/material/button"
 // import { MatIconModule }   from "@angular/material/icon"
@@ -35,7 +36,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     // MatButtonModule,
     // MatInputModule,
     // MatIconModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    AgGridLearningModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

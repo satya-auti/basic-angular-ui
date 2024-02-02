@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BasicGridComponent } from './basic-grid/basic-grid.component';
+import { AgGridLearningRoutingModule } from './ag-grid-learning-routing.module';
+import { AgGridModule } from 'ag-grid-angular';
 
 
 
@@ -9,7 +11,9 @@ import { BasicGridComponent } from './basic-grid/basic-grid.component';
     BasicGridComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AgGridLearningRoutingModule,
+    AgGridModule,
   ]
 })
 export class AgGridLearningModule { }
